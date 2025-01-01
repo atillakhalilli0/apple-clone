@@ -1,0 +1,1981 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                position: relative;
+                font: 600 11px 'San Francisco', Helvetica, Arial, sans-serif;
+                text-transform: capitalize;
+                color: #000;
+                transition: .4s;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 50%;
+                    transform-origin: center;
+                    height: 2px;
+                    width: 0;
+                    background-color: #333;
+                    transition: width 1s linear;
+                }
+
+                &:hover::after {
+                    width: 50%;
+                    width: -50%;
+                }
+            }
+
+            .icon-x {
+                display: none;
+            }
+        }
+
+        #icon {
+            display: none;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .nav-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+}
+
+.categories {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category {
+        font: 400 11px 'San Francisco', Helvetica, Arial, sans-serif;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
+
+.header-content-bg {
+    background-color: #f2f2f2;
+
+    .content {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            font: 500 20px 'San Francisco', Helvetica, Arial, sans-serif;
+            margin-bottom: 15px;
+        }
+
+        a {
+            font: 500 16px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #0071e3;
+            text-transform: capitalize;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -9px;
+                left: 0;
+                height: 2px;
+                width: 0;
+                background: linear-gradient(90deg, yellow, orange, green, blue);
+                transition: width 1s linear;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.section-1-bg {
+    background: #000;
+
+    .section-1 {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+        span {
+            color: #bf4800;
+            font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+            text-transform: capitalize;
+        }
+
+        h2 {
+            margin: 10px 0;
+            font: 400 18px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #8b887e;
+            text-transform: capitalize;
+        }
+
+        .text {
+            height: 40px;
+            object-fit: cover;
+        }
+
+        p {
+            margin: 20px 0;
+            font: 400 15px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #fff;
+        }
+
+        .buy {
+            display: inline-block;
+            font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #fff;
+            background-color: #0071e3;
+            padding: 10px 25px;
+            text-transform: capitalize;
+            border: none;
+            border-radius: 30px;
+            transition: .4s;
+
+            &:hover {
+                box-shadow: 3px 5px 7px rgb(172, 185, 236)
+            }
+        }
+
+        .learn-more {
+            position: relative;
+            margin: 25px 0;
+            font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #0071e3;
+            text-transform: capitalize;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -9px;
+                left: 0;
+                height: 2px;
+                width: 0;
+                background: linear-gradient(90deg, yellow, orange, green, blue);
+                transition: width 1s linear;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        .iphone {
+            width: 100%;
+            padding: 60px 0;
+            object-fit: contain;
+        }
+    }
+}
+
+.section-2 {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    span {
+        color: #bf4800;
+        font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+        text-transform: capitalize;
+    }
+
+    h2 {
+        margin: 10px 0;
+        font: 400 18px 'San Francisco', Helvetica, Arial, sans-serif;
+        color: #000;
+        text-transform: capitalize;
+    }
+
+    h3 {
+        margin: 10px 0;
+        font: 400 45px 'San Francisco', Helvetica, Arial, sans-serif;
+        color: #000;
+        text-transform: capitalize;
+    }
+
+    p {
+        margin: 20px 0;
+        font: 400 15px 'San Francisco', Helvetica, Arial, sans-serif;
+        color: #000;
+    }
+
+    .buy {
+        display: inline-block;
+        font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+        color: #fff;
+        background-color: #0071e3;
+        padding: 10px 25px;
+        text-transform: capitalize;
+        border: none;
+        border-radius: 30px;
+        transition: .4s;
+
+        &:hover {
+            box-shadow: 3px 5px 7px #010e42;
+        }
+    }
+
+    .learn-more {
+        position: relative;
+        margin: 25px 0;
+        font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+        color: #0071e3;
+        text-transform: capitalize;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -9px;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background: linear-gradient(90deg, yellow, orange, green, blue);
+            transition: width 1s linear;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+.section-2-bottom {
+    background: url("../img/newphoria.jpeg")center/cover;
+    height: 60vh;
+}
+
+.section-3-bg {
+    background-color: #fbfbfb;
+
+    .section-3 {
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+        .right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                color: #000;
+                font: 400 18px 'San Francisco', Helvetica, Arial, sans-serif;
+                text-transform: capitalize;
+            }
+
+            h2 {
+                margin: 10px 0;
+                font: 600 48px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #1e3791;
+            }
+
+            p {
+                margin: 20px 0;
+                font: 400 20px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #000;
+            }
+
+            .buy {
+                display: inline-block;
+                font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #fff;
+                background-color: #0071e3;
+                padding: 10px 25px;
+                text-transform: capitalize;
+                border: none;
+                border-radius: 30px;
+                transition: .4s;
+
+                &:hover {
+                    box-shadow: 3px 5px 7px #010e42;
+                }
+            }
+
+            .learn-more {
+                position: relative;
+                margin: 25px 0;
+                font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #0071e3;
+                text-transform: capitalize;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background: linear-gradient(90deg, yellow, orange, green, blue);
+                    transition: width 1s linear;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.section-4-bg {
+    background: url("../img/applebg12.jpeg")center/cover;
+    height: 100vh;
+    border: none;
+    border-radius: 30px;
+    margin: 0 20px;
+
+    .section-4 {
+
+        .text {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+
+            p {
+                font: 600 23px 'San Francisco', Helvetica, Arial, sans-serif;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                margin-top: 10px;
+                font: 400 44px 'San Francisco', Helvetica, Arial, sans-serif;
+            }
+
+            a {
+                margin-top: 25px;
+                width: fit-content;
+                padding: 8px 20px;
+                font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #000;
+                background-color: #ffffffcc;
+                border: none;
+                border-radius: 30px;
+
+                i {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.section-5-bg {
+    background-color: #fbfbfb;
+
+    .section-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0;
+
+        h2 {
+            text-align: center;
+            color: #000;
+            text-transform: capitalize;
+            font: 600 48px 'San Francisco', Helvetica, Arial, sans-serif;
+        }
+
+        .cards {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .card {
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin: 10px 0;
+                    width: 60%;
+                    height: 255px;
+                    object-fit: contain;
+                }
+
+                span {
+                    color: #bf4800;
+                    font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+                    text-transform: capitalize;
+                }
+
+                .icons {
+                    display: flex;
+                    gap: 10px;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+
+                    i {
+                        border: none;
+                        border-radius: 50%;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+
+                    .grey {
+                        color: #3F4042;
+                    }
+
+                    .white {
+                        color: #F2F1EC;
+                    }
+
+                    .red {
+                        color: #f00;
+                    }
+
+                    .cream {
+                        color: #BCB4A7;
+                    }
+
+                    .darkblue {
+                        color: #3C4650;
+                    }
+                }
+
+                h2 {
+                    text-transform: capitalize;
+                    font: 600 16px 'San Francisco', Helvetica, Arial, sans-serif !important;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                    text-transform: capitalize;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                }
+
+                .price {
+                    font-size: 13px;
+                }
+
+                .buy {
+                    display: inline-block;
+                    font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #fff;
+                    background-color: #0071e3;
+                    padding: 10px 25px;
+                    text-transform: capitalize;
+                    border: none;
+                    border-radius: 30px;
+                    transition: .4s;
+
+                    &:hover {
+                        box-shadow: 3px 5px 7px #010e42;
+                    }
+                }
+
+                .learn-more {
+                    position: relative;
+                    margin: 25px 0;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #0071e3;
+                    text-transform: capitalize;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: linear-gradient(90deg, yellow, orange, green, blue);
+                        transition: width 1s linear;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+
+                hr {
+                    width: 70%;
+                    border: 1px solid gray;
+                }
+
+                .specs {
+                    text-align: center;
+                    width: 55%;
+                    font: 400 11px / 20px 'San Francisco', Helvetica, Arial, sans-serif;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+        .learn-more {
+            position: relative;
+            font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #0071e3;
+            text-transform: capitalize;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -9px;
+                left: 0;
+                height: 2px;
+                width: 0;
+                background: linear-gradient(90deg, yellow, orange, green, blue);
+                transition: width 1s linear;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.section-6-bg {
+    background-color: #f2f2f2;
+
+    .section-6 {
+        padding: 60px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font: 400 45px 'San Francisco', Helvetica, Arial, sans-serif;
+            text-transform: capitalize;
+            margin-bottom: 50px;
+        }
+
+        .cards {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .card-1 {
+                padding: 10px;
+                width: 30%;
+                height: 510px;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 40px;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    padding-bottom: 30px;
+                }
+
+                h3 {
+                    font: 600 24px 'San Francisco', Helvetica, Arial, sans-serif;
+                    text-transform: capitalize;
+                    color: #000;
+                }
+
+                .learn-more {
+                    position: relative;
+                    margin: 25px 0;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #0071e3;
+                    text-transform: capitalize;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: linear-gradient(90deg, yellow, orange, green, blue);
+                        transition: width 1s linear;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .card-2 {
+                padding: 10px;
+                width: 28%;
+                height: 510px;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                img {
+                    object-fit: contain;
+                    height: 30%;
+                    width: 100%;
+                }
+
+                h3 {
+                    width: 80%;
+                    font: 600 24px 'San Francisco', Helvetica, Arial, sans-serif;
+                    text-transform: capitalize;
+                    color: #000;
+                    margin-bottom: 30px;
+                }
+
+                span {
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #6e6e73;
+                    margin-bottom: 60px;
+                }
+
+                .learn-more {
+                    position: relative;
+                    margin: 25px 0;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #0071e3;
+                    text-transform: capitalize;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: linear-gradient(90deg, yellow, orange, green, blue);
+                        transition: width 1s linear;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .card-3 {
+                padding: 10px;
+                width: 28%;
+                height: 510px;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                h3 {
+                    width: 80%;
+                    margin: 20px 0 30px 0;
+                    font: 600 24px 'San Francisco', Helvetica, Arial, sans-serif;
+                    text-transform: capitalize;
+                    color: #000;
+                }
+
+                img {
+                    width: 70%;
+                    object-fit: cover;
+                }
+
+                span {
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #6e6e73;
+                }
+
+                .learn-more {
+                    position: relative;
+                    margin: 25px 0;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #0071e3;
+                    text-transform: capitalize;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: linear-gradient(90deg, yellow, orange, green, blue);
+                        transition: width 1s linear;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-7 {
+        background: url("../img/section7.jpeg")center/cover;
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin: 30px 0;
+            text-align: center;
+            width: 50%;
+            font: 600 48px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #000;
+        }
+
+        p {
+            width: 45%;
+            text-align: center;
+            font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #000;
+        }
+
+        .learn-more {
+            position: relative;
+            margin: 25px 0;
+            font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #0071e3;
+            text-transform: capitalize;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -9px;
+                left: 0;
+                height: 2px;
+                width: 0;
+                background: linear-gradient(90deg, yellow, orange, green, blue);
+                transition: width 1s linear;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .section-8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            margin: 40px 0;
+            width: 40%;
+            font: 600 48px 'San Francisco', Helvetica, Arial, sans-serif;
+            text-align: center;
+        }
+
+        .content {
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .left {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                h3 {
+                    width: 60%;
+                    font: 600 48px 'San Francisco', Helvetica, Arial, sans-serif;
+                }
+
+                p {
+                    width: 60%;
+                    margin-top: 30px;
+                    font: 400 18px / 29px 'San Francisco', Helvetica, Arial, sans-serif;
+                }
+
+                .learn-more {
+                    position: relative;
+                    margin: 25px 0;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #0071e3;
+                    text-transform: capitalize;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: linear-gradient(90deg, yellow, orange, green, blue);
+                        transition: width 1s linear;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                padding: 30px 0;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.section-9-bg {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+
+    .section-9 {
+        width: 100%;
+        padding: 110px 0;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        .left {
+            flex-basis: 50%;
+            text-align: center;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .right {
+            width: 60%;
+            text-align: center;
+
+            h3 {
+                font: 600 45px 'San Francisco', Helvetica, Arial, sans-serif;
+            }
+
+            p {
+                margin: 30px 0;
+                font: 400 18px / 29px 'San Francisco', Helvetica, Arial, sans-serif;
+            }
+
+            .buy {
+                display: inline-block;
+                margin-right: 10px;
+                font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #fff;
+                background-color: #0071e3;
+                padding: 10px 25px;
+                text-transform: capitalize;
+                border: none;
+                border-radius: 30px;
+                transition: .4s;
+
+                &:hover {
+                    box-shadow: 3px 5px 7px #010e42;
+                }
+            }
+
+            .learn-more {
+                position: relative;
+                margin: 25px 0;
+                font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #0071e3;
+                text-transform: capitalize;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background: linear-gradient(90deg, yellow, orange, green, blue);
+                    transition: width 1s linear;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.section-10-bg {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f2f2f2;
+
+    .section-10 {
+        margin-bottom: 40px;
+        padding: 20px 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            text-transform: capitalize;
+            font: 600 45px 'San Francisco', Helvetica, Arial, sans-serif;
+        }
+
+        p {
+            margin: 30px 0;
+            font: 400 18px / 29px 'San Francisco', Helvetica, Arial, sans-serif;
+        }
+
+        .learn-more {
+            position: relative;
+            font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+            color: #0071e3;
+            text-transform: capitalize;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -9px;
+                left: 0;
+                height: 2px;
+                width: 0;
+                background: linear-gradient(90deg, yellow, orange, green, blue);
+                transition: width 1s linear;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .learn-more {
+        position: relative;
+        font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+        color: #0071e3;
+        text-transform: capitalize;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -9px;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background: linear-gradient(90deg, yellow, orange, green, blue);
+            transition: width 1s linear;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+.section-11-bg {
+    background-color: #f2f2f2;
+
+    .section-11 {
+        width: 100%;
+        padding-bottom: 90px;
+
+        .cards {
+            width: 100%;
+            max-width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            .card {
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    object-fit: cover;
+                    margin-bottom: 20px;
+                }
+
+                h3 {
+                    text-transform: capitalize;
+                    font: 600 20px 'San Francisco', Helvetica, Arial, sans-serif;
+                }
+
+                p {
+                    text-align: center;
+                    margin: 10px 0;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                }
+
+                .learn-more {
+                    position: relative;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #0071e3;
+                    text-transform: capitalize;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: linear-gradient(90deg, yellow, orange, green, blue);
+                        transition: width 1s linear;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-12-bg {
+    background-color: #f2f2f2;
+
+    .title {
+        text-align: center;
+        padding: 20px 0;
+
+        h2 {
+            font: 600 48px 'San Francisco', Helvetica, Arial, sans-serif;
+        }
+
+    }
+
+    .section-12 {
+        background: url("../img/section12.jpg")center/cover;
+        padding: 20px 0;
+        height: 65vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card-1 {
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font: 400 45px 'San Francisco', Helvetica, Arial, sans-serif;
+                text-transform: uppercase;
+            }
+
+            p {
+                text-align: center;
+                margin: 10px 0;
+                font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+            }
+
+            .learn-more {
+                position: relative;
+                font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #0071e3;
+                text-transform: capitalize;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background: linear-gradient(90deg, yellow, orange, green, blue);
+                    transition: width 1s linear;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .cards {
+        padding: 80px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        .card-2 {
+            background-color: #fff !important;
+            width: 100%;
+            background: url("../img/section12_1.jpeg")center/contain no-repeat;
+            height: 65vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                margin: 20px 0;
+                text-align: center;
+                font: 400 45px 'San Francisco', Helvetica, Arial, sans-serif;
+            }
+
+            .learn-more {
+                position: relative;
+                font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #0071e3;
+                text-transform: capitalize;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background: linear-gradient(90deg, yellow, orange, green, blue);
+                    transition: width 1s linear;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        .card-3 {
+            background-color: #fff !important;
+            width: 100%;
+            background: url("../img/section12_2.jpeg")center/cover no-repeat;
+            height: 65vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                margin: 20px 0;
+                text-align: center;
+                font: 400 45px 'San Francisco', Helvetica, Arial, sans-serif;
+            }
+
+            .learn-more {
+                position: relative;
+                font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #0071e3;
+                text-transform: capitalize;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background: linear-gradient(90deg, yellow, orange, green, blue);
+                    transition: width 1s linear;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.section-13-bg {
+    background-color: #f2f2f2;
+
+    .section-13 {
+
+        h2 {
+            text-align: center;
+            padding: 20px 0;
+            font: 600 48px 'San Francisco', Helvetica, Arial, sans-serif;
+        }
+
+        .card-1 {
+            background-color: #fff;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+
+            .left {
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .right {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 40%;
+                    object-fit: cover;
+                }
+
+                p {
+                    margin: 20px 0;
+                    text-align: center;
+                    font: 400 23px 'San Francisco', Helvetica, Arial, sans-serif;
+                }
+
+                .learn-more {
+                    margin: 0 10px;
+                    position: relative;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #0071e3;
+                    text-transform: capitalize;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: linear-gradient(90deg, yellow, orange, green, blue);
+                        transition: width 1s linear;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-14-bg {
+    padding: 40px 0;
+    height: fit-content;
+    background-color: #f2f2f2;
+
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        .card-1 {
+            padding: 20px 0;
+            width: 48%;
+            height: 550px;
+            background-color: #090a0e;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            h3 {
+                font: 400 45px 'San Francisco', Helvetica, Arial, sans-serif;
+            }
+
+            p {
+                width: 90%;
+                text-align: center;
+                font: 400 23px 'San Francisco', Helvetica, Arial, sans-serif;
+            }
+
+            .learn-more {
+                margin: 0 10px;
+                position: relative;
+                font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                color: #0071e3;
+                text-transform: capitalize;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background: linear-gradient(90deg, yellow, orange, green, blue);
+                    transition: width 1s linear;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 40vh;
+                text-align: center;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.section-15-bg {
+    background-color: #f2f2f2;
+    padding: 10px 0 70px 0;
+
+    .section-15 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .content {
+            padding: 30px 0;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .left {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                h3 {
+                    width: 80%;
+                    font: 400 45px 'San Francisco', Helvetica, Arial, sans-serif;
+                }
+
+                p {
+                    width: 60%;
+                    margin-top: 30px;
+                    font: 400 18px / 29px 'San Francisco', Helvetica, Arial, sans-serif;
+                }
+
+                .learn-more {
+                    position: relative;
+                    margin: 25px 0;
+                    font: 400 16px 'San Francisco', Helvetica, Arial, sans-serif;
+                    color: #0071e3;
+                    text-transform: capitalize;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: linear-gradient(90deg, yellow, orange, green, blue);
+                        transition: width 1s linear;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                padding: 30px 0;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .terms {
+        padding: 20px 0;
+        width: 100%;
+        text-align: justify;
+        color: #0000007a;
+        font: 400 14px 'San Francisco', Helvetica, Arial, sans-serif;
+
+        ol {
+            list-style: decimal;
+            list-style-position: inside;
+        }
+    }
+
+    hr{
+        width: 100%;
+        border: 1px solid #999;
+    }
+
+    .top{
+        padding: 20px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        .fa-apple{
+            font-size: 23px;
+        }
+
+        span{
+            color: #000000BD;
+            margin: 0 10px;
+            font: 400 14px 'San Francisco', Helvetica, Arial, sans-serif;
+            
+            i{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .footer{
+        display: flex;
+        font: 400 15px 'San Francisco', Helvetica, Arial, sans-serif;
+        justify-content: space-between;
+
+        a{color: #000000BD;}
+
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        label i{
+            display: none;
+        }
+
+        .left{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .menu{
+                width: 30%;
+
+                label{
+                    padding: 10px 0;
+                }
+            }
+            
+            .content{
+                padding: 20px 0;
+                display: flex;
+                flex-direction: column;
+
+                a{
+                    margin: 2px 0;
+                    font-size: 13px;
+                    color: #000000BD;
+                }
+            }
+        }
+
+        .right{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            .menu{
+                width: 50%;
+
+                label{
+                    padding: 10px 0;
+                }
+            }
+            
+            .content{
+                padding: 20px 0;
+                display: flex;
+                flex-direction: column;
+
+                a{
+                    margin: 2px 0;
+                    font-size: 13px;
+                    color: #000000BD;
+                }
+            }
+        }
+    }
+
+    .bottom{
+        margin: 10px 0;
+        color: #000000BD;
+        font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+
+        a{
+            color: #0071e3;
+            text-decoration: underline;
+        }
+    }
+
+    .end{
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        color: #000000BD;
+        font: 400 13px 'San Francisco', Helvetica, Arial, sans-serif;
+        text-transform: capitalize;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .navbar ul {
+        display: none !important;
+        align-items: start !important;
+        justify-content: unset !important;
+    }
+
+    .nav-icons .menu-icon {
+        display: inline !important;
+        padding-top: 6px;
+    }
+
+    #icon:checked~ul {
+        display: flex !important;
+        position: fixed;
+        text-align: start;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 40px;
+        z-index: 999;
+        gap: 15px;
+        overflow-y: auto;
+
+        a {
+            font: 400 20px 'San Francisco', Helvetica, Arial, sans-serif;
+            text-transform: capitalize;
+            color: #000;
+        }
+
+        .icon-x {
+            width: 85%;
+            display: flex !important;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .section-1 {
+        .learn-more {
+            padding-bottom: 60px;
+        }
+
+        .iphone {
+            padding: 250px 0 !important;
+            transform: rotate(90deg);
+        }
+    }
+
+    .section-2-bottom {
+        height: 30vh;
+    }
+
+    .section-3 {
+        flex-direction: column;
+        padding: 50px 0;
+        text-align: center;
+
+        h2 {
+            font-size: 32px !important;
+        }
+    }
+
+    .section-4-bg {
+        background: none;
+        height: auto;
+
+        .respo {
+            background: url("../img/applebg12.jpeg") center/cover;
+            width: 100%;
+            height: 50vh;
+        }
+
+        .text {
+            align-items: center;
+            height: fit-content !important;
+            padding: 20px;
+            color: #000 !important;
+
+            h2 {
+                font-size: 28px !important;
+            }
+
+            a {
+                color: #0071e3 !important;
+
+                i {
+                    display: inline !important;
+                    padding-right: 10px !important;
+                }
+            }
+        }
+    }
+
+    .section-5 {
+        h2 {
+            font-size: 32px !important;
+        }
+
+        .card {
+            width: 50% !important;
+        }
+    }
+
+    .section-6 {
+        h2 {
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 30px !important;
+
+            .card-1 {
+                height: fit-content !important;
+                width: 100% !important;
+                gap: 0 !important;
+                padding: 60px 0 !important;
+
+                img {
+                    width: 80% !important;
+                    padding: 0 !important;
+                }
+            }
+
+            .card-2 {
+                width: 100% !important;
+                padding: 0 !important;
+
+                span {
+                    margin: 0 !important;
+                }
+            }
+
+            .card-3 {
+                width: 100% !important;
+                padding: 0 !important;
+
+                img {
+                    width: 40% !important;
+                }
+            }
+        }
+    }
+
+    .section-7 {
+        height: 60vh !important;
+
+        h2 {
+            font-size: 32px !important;
+            width: 80% !important;
+        }
+
+        p {
+            width: 65% !important;
+        }
+    }
+
+    .section-8 {
+        h2 {
+            font-size: 32px !important;
+            width: 100% !important;
+        }
+
+        .content {
+            padding: 40px 0;
+            flex-direction: column;
+
+            .left {
+                h3 {
+                    font-size: 28px !important;
+                }
+            }
+        }
+    }
+
+    .section-9 {
+        padding: 30px 0 !important;
+        flex-direction: column-reverse;
+
+        .left {
+            img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            width: 100% !important;
+        }
+    }
+
+    .section-10 {
+        text-align: center;
+
+        h2 {
+            font-size: 28px !important;
+        }
+
+        p {
+            font-size: 16px !important;
+        }
+    }
+
+    .section-11 {
+        .cards {
+            gap: 30px;
+            justify-content: center !important;
+        }
+    }
+
+    .section-12-bg {
+
+        .section-12 {
+            background: none !important;
+            height: 10vh !important;
+        }
+
+        .cards {
+            flex-direction: column !important;
+
+            .card-2 {
+                h3 {
+                    font-size: 28px !important;
+                }
+            }
+
+            .card-3 {
+                h3 {
+                    font-size: 28px !important;
+                }
+            }
+        }
+    }
+
+    .section-13 {
+        .left {
+            display: none;
+        }
+
+        .right {
+            width: 100% !important;
+        }
+    }
+
+    .footer{
+        flex-direction: column;
+        
+        .right{
+            width: 100% !important;
+            .menu{
+                width: 100% !important; 
+                label{
+                    display: block !important;
+                }       
+                label i{
+                    display: inline;
+                }
+                .fa-chevron-down {
+                    transition: transform 0.3s ease;
+                }
+                .content {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease;
+                    padding-left: 15px;
+                }
+            }
+            
+            input[type="checkbox"]:checked + label .fa-chevron-down {
+                transform: rotate(180deg);
+            }
+            input[type="checkbox"]:checked ~ .content {
+                max-height: 300px;
+            }
+        }
+
+        .left{
+            .menu{        
+                label i{
+                    display: inline;
+                }
+                .fa-chevron-down {
+                    transition: transform 0.3s ease;
+                }
+                input[type="checkbox"]:checked + label .fa-chevron-down {
+                    transform: rotate(180deg);
+                }
+                input[type="checkbox"]:checked ~ .content {
+                    max-height: 300px;
+                }
+                .content {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    footer{
+        .end{
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width:426px) {
+    .section-1 {
+        .iphone {
+            padding: 120px 0 !important;
+        }
+    }
+
+    .section-2-bottom {
+        height: 15vh;
+    }
+
+    .section-11 {
+        .cards {
+
+            flex-direction: column;
+        }
+    }
+
+    .section-14 {
+        .cards {
+            flex-direction: column;
+
+            .card-1 {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .section-15-bg {
+        .content {
+            flex-direction: column;
+
+            h3 {
+                width: 100% !important;
+                font-size: 28px !important;
+            }
+
+            p {
+                width: 100% !important;
+                font-size: 18px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .section-5 {
+        .card {
+            width: 100% !important;
+        }
+    }
+
+    .section-7 {
+        height: 50vh !important;
+
+        p {
+            width: 80% !important;
+        }
+    }
+}
