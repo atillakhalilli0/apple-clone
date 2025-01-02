@@ -1525,6 +1525,10 @@ footer {
             display: none;
         }
 
+        label{
+            color: #000000BD;
+        }
+
         label i{
             display: none;
         }
@@ -1868,11 +1872,13 @@ footer {
                 }       
                 label i{
                     display: inline;
+                    float: right;
                 }
                 .fa-chevron-down {
                     transition: transform 0.3s ease;
                 }
                 .content {
+                    display: none;
                     max-height: 0;
                     overflow: hidden;
                     transition: max-height 0.3s ease;
@@ -1884,7 +1890,8 @@ footer {
                 transform: rotate(180deg);
             }
             input[type="checkbox"]:checked ~ .content {
-                max-height: 300px;
+                display: flex;
+                flex-direction: column;
             }
         }
 
@@ -1893,23 +1900,29 @@ footer {
             .menu{
                 display: block !important;
                 width: 100% !important;
+                label{
+                    display: block;
+                }
                 label i{
                     display: inline;
+                    float: right;
                 }
                 .fa-chevron-down {
                     transition: transform 0.3s ease;
                 }
+                .content {
+                    display: none;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease;
+                    padding-left: 15px;
+                }
+                
                 input[type="checkbox"]:checked + label .fa-chevron-down {
                     transform: rotate(180deg);
                 }
                 input[type="checkbox"]:checked ~ .content {
-                    max-height: 300px;
-                }
-                .content {
-                    max-height: 0;
-                    overflow: hidden;
-                    transition: max-height 0.3s ease;
-                    padding-left: 15px;
+                    display: flex;
+                    flex-direction: column;
                 }
             }
         }
