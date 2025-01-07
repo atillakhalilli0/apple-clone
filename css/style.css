@@ -1663,7 +1663,7 @@ footer {
         }
 
         .iphone {
-            padding: 250px 0 !important;
+            padding: 150px 0 !important;
             transform: rotate(90deg);
         }
     }
@@ -1936,6 +1936,16 @@ footer {
         }
     }
 
+    .section-14 {
+        .cards {
+            flex-direction: column;
+
+            .card-1 {
+                width: 100% !important;
+            }
+        }
+    }
+
     footer{
         .end{
             flex-direction: column;
@@ -1959,16 +1969,6 @@ footer {
         .cards {
 
             flex-direction: column;
-        }
-    }
-
-    .section-14 {
-        .cards {
-            flex-direction: column;
-
-            .card-1 {
-                width: 100% !important;
-            }
         }
     }
 
